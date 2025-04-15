@@ -9,8 +9,11 @@ const Details = function () {
   const param = useParams()
   console.log("PARAMS", param)
 
-  const [detail, setDetail] = useState<Dettaglio | null>(null)
+  const [detail, setDetail] = useState<Dettaglio | any>(null)
+  //   const [detail, setDetail] = useState<Dettaglio | null>(null)
+
   const [isLoading, setIsLoading] = useState(true)
+
   const getDetails = function () {
     fetch(urlApiArticle + param.articleID)
       .then((response) => {

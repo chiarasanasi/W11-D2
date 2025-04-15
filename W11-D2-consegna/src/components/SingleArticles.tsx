@@ -11,7 +11,7 @@ const SingleArticles = function (props: SingleArticlesProps) {
   const navigate = useNavigate()
   return (
     <>
-      <Col xs={12} sm={6} md={6} lg={4}>
+      <Col xs={12} sm={6} md={4} lg={3}>
         <Card className="fixed-card">
           <Card.Img
             className="fixed-card-img"

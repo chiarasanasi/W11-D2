@@ -2,12 +2,15 @@ import "./App.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import AllArticles from "./components/AllArticles"
-import { Col, Container, Row } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import Details from "./components/Details"
+import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <BrowserRouter>
+      <NavBar />
       <Container>
         <Row className="justify-content-center g-3">
           <Routes>
@@ -16,6 +19,7 @@ function App() {
           </Routes>
         </Row>
       </Container>
+      <Footer />
     </BrowserRouter>
   )
 }
